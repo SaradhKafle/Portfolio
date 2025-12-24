@@ -1,0 +1,58 @@
+body {
+  background: radial-gradient(
+      circle at top left,
+      rgba(79, 124, 255, 0.15),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(0, 255, 200, 0.12),
+      transparent 40%
+    ),
+    #0b0f19;
+  color: #eaeaf0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero h2 {
+  margin-top: 12px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  opacity: 0.75;
+}
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 40px rgba(79, 124, 255, 0.2);
+}
+
