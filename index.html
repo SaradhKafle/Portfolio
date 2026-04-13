@@ -1,120 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saradh Kafle | ICT Portfolio</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saradh Kafle — ICT & AI Student</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">Saradh</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">SK<span class="logo-dot">.</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="assets/cv/Saradh_CV.pdf" target="_blank" class="nav-cv">Resume</a></li>
+            </ul>
+        </div>
     </nav>
-  </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Saradh Kafle</h1>
-      <h2>ICT Engineering Student</h2>
-      <p>Software • Data & AI • Systems & Networking</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-tag">
+                <span class="tag-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-name">Saradh<br><span>Kafle</span></h1>
+            <p class="hero-tagline">Wired for IT, driven by AI.</p>
+            <p class="hero-sub">ICT Engineering Student · AI & Data Analytics · Software Development</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary">Get in Touch</a>
+                <a href="#projects" class="btn-secondary">See My Work</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-frame">
+                <img src="assets/images/photo.jpg" alt="Saradh Kafle">
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="btn secondary">GitHub</a>
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="about-image">
+                <div class="profile-frame">
+                    <img src="assets/images/profile1.png" alt="Saradh Kafle">
+                </div>
+                <div class="about-badge">
+                    <span class="badge-num">3+</span>
+                    <span class="badge-text">Years IT<br>Experience</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <p class="section-label">About Me</p>
+                <h2 class="section-title">From Broadcast IT<br>to AI & Code</h2>
+                <p class="about-text">
+                    ICT engineering student specialising in AI, Data Analytics, and Software Development. 
+                    Currently building practical skills in machine learning, programming, and data-driven projects, 
+                    backed by three years of hands-on IT experience in network administration and broadcast systems in Nepal.
+                </p>
+                <p class="about-text">
+                    Eager to learn and contribute as a junior developer, IT trainee, or data analytics assistant.
+                </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">TV Channels</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">AI</span>
+                        <span class="stat-label">Specialisation</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">FI</span>
+                        <span class="stat-label">Based in Finland</span>
+                    </div>
+                </div>
+                <a href="assets/cv/Saradh_CV.pdf" download class="btn-primary">Download CV</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h3>About Me</h3>
-    <p>
-      ICT Engineering student at JAMK University of Applied Sciences with hands-on
-      experience in frontend development, Linux systems, networking, and
-      broadcast IT environments. Actively building skills in software
-      development, data analytics, and AI.
-    </p>
-  </section>
+    <!-- Skills / Services Section -->
+    <section id="services" class="services">
+        <div class="section-container col">
+            <p class="section-label center">What I Work With</p>
+            <h2 class="section-title center">Skills & Services</h2>
+            <div class="skills-grid">
 
-  <!-- SKILLS -->
-  <section id="skills" class="section dark">
-    <h3>Skills</h3>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive websites using HTML5, CSS3, and JavaScript with clean, modern layouts.</p>
+                </div>
 
-    <div class="skills-grid">
-      <div class="card">
-        <h4>Software & Frontend</h4>
-        <ul>
-          <li>Java, JavaScript</li>
-          <li>HTML, CSS</li>
-          <li>Frontend Programming</li>
-          <li>Git & GitHub</li>
-        </ul>
-      </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Studying classification, regression, deep learning, and data-driven project work at JAMK.</p>
+                </div>
 
-      <div class="card">
-        <h4>Data & AI (Foundational)</h4>
-        <ul>
-          <li>Python (basic)</li>
-          <li>Data Structures</li>
-          <li>Research & Development</li>
-          <li>AI & Analytics (learning)</li>
-        </ul>
-      </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programming</h3>
+                    <p>Java, JavaScript, Python (basic), with Git & GitHub for version control in coursework projects.</p>
+                </div>
 
-      <div class="card">
-        <h4>ICT & Systems</h4>
-        <ul>
-          <li>Linux & Windows Basics</li>
-          <li>Networking</li>
-          <li>Bash & PowerShell</li>
-          <li>Cybersecurity Fundamentals</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Networks & Systems</h3>
+                    <p>Data networks, routing, cabling, Linux and Windows administration from real broadcast environments.</p>
+                </div>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h3>Projects</h3>
+                <div class="skill-card">
+                    <div class="skill-icon">🔒</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Fundamentals of cybersecurity, secure system configuration, and network protection basics.</p>
+                </div>
 
-    <div class="projects-grid">
-      <div class="card">
-        <h4>Frontend Coursework</h4>
-        <p>React & JavaScript coursework and UI exercises.</p>
-        <a href="#" class="link">View on GitHub</a>
-      </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Scripting & Automation</h3>
+                    <p>Bash and PowerShell scripting for system automation and server administration tasks.</p>
+                </div>
 
-      <div class="card">
-        <h4>Web Portfolio</h4>
-        <p>Responsive portfolio website using HTML, CSS, and GitHub Pages.</p>
-        <a href="#" class="link">View on GitHub</a>
-      </div>
-    </div>
-  </section>
+            </div>
+        </div>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section dark">
-    <h3>Contact</h3>
-    <p>Email: saradhkafle@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/saradh-kafle</p>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-container col">
+            <p class="section-label center">Portfolio</p>
+            <h2 class="section-title center">My Projects</h2>
+            <div class="projects-grid">
 
-  <script src="js/main.js"></script>
+                <div class="project-card featured">
+                    <div class="project-tag">Web Dev</div>
+                    <h3>This Portfolio</h3>
+                    <p>Personal portfolio site built from scratch with HTML, CSS, and JavaScript. Responsive, structured, and hosted on GitHub Pages.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link">Live Site ↗</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">HTML</div>
+                    <h3>HTML Table Project</h3>
+                    <p>Structured customer data table with semantic HTML and responsive design principles.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span><span>CSS3</span>
+                    </div>
+                    <a href="https://student.labranet.jamk.fi/~ag1630/Basic%20of%20Web%20Development/exercise3/customer_table.html" target="_blank" class="project-link">View ↗</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">Design</div>
+                    <h3>Website Layout Design</h3>
+                    <p>Exploring layout techniques, icons, and visual design fundamentals for modern web pages.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span><span>CSS3</span>
+                    </div>
+                    <a href="https://student.labranet.jamk.fi/~ag1630/Basic%20of%20Web%20Development/exercise6/layout_icons.html" target="_blank" class="project-link">View ↗</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">Media</div>
+                    <h3>Media on Website</h3>
+                    <p>Integrating images, video, and audio into web pages with proper HTML5 media elements.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span><span>CSS3</span>
+                    </div>
+                    <a href="https://student.labranet.jamk.fi/~ag1630/Basic%20of%20Web%20Development/exercise7/backgraound.html" target="_blank" class="project-link">View ↗</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <div class="contact-info">
+                <p class="section-label">Let's Talk</p>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-desc">Open to trainee positions, junior developer roles, and IT support opportunities in Finland.</p>
+
+                <div class="contact-details">
+                    <a href="mailto:saradhkafle@gmail.com" class="contact-item">
+                        <span class="contact-icon">✉</span>
+                        <span>saradhkafle@gmail.com</span>
+                    </a>
+                    <a href="tel:+358413299888" class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>+358 413 299 888</span>
+                    </a>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Espoo, Finland</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/saradh-kafle-325a42308/" target="_blank" class="social-btn">
+                        <img src="assets/images/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://x.com/SaradhKafley" target="_blank" class="social-btn">
+                        <img src="assets/images/x.png" alt="X / Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/saradhkafley" target="_blank" class="social-btn">
+                        <img src="assets/images/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/saradh.kafley" target="_blank" class="social-btn">
+                        <img src="assets/images/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <span class="logo">SK<span class="logo-dot">.</span></span>
+            <p>© 2025 Saradh Kafle · Espoo, Finland</p>
+            <p class="footer-quote">Wired for IT, driven by AI.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
