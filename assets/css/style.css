@@ -795,6 +795,7 @@ img {
 =========================== */
 @media (max-width: 900px) {
     .hero {
+        display: none;
         flex-direction: column-reverse;
         text-align: center;
         padding: 80px 24px 40px;
