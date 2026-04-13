@@ -797,8 +797,8 @@ img {
     .hero {
         flex-direction: column-reverse;
         text-align: center;
-        padding: 120px 24px 60px;
-        gap: 40px;
+        padding: 80px 24px 40px;
+        gap: 24px;
         min-height: auto;
     }
 
@@ -808,8 +808,8 @@ img {
     .hero-scroll { display: none; }
 
     .image-frame {
-        width: 280px;
-        height: 340px;
+        width: 240px;
+        height: 280px;
     }
 
     .section-container {
