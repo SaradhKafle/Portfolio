@@ -800,6 +800,7 @@ img {
         padding: 80px 24px 40px;
         gap: 24px;
         min-height: auto;
+        padding-top: 70px;
     }
 
     .hero-content { max-width: 100%; }

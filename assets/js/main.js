@@ -94,3 +94,37 @@ if (form) {
         }, 3000);
     });
 }
+
+// TYPING ANIMATION
+const roles = [
+    "ICT Engineering Student",
+    "AI & Data Analytics",
+    "Software Developer",
+    "IT Specialist"
+];
+
+const typingEl = document.querySelector('.hero-sub');
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function type() {
+    const current = roles[roleIndex];
+    
+    if (isDeleting) {
+        typingEl.textContent = current.substring(0, charIndex--);
+    } else {
+        typingEl.textContent = current.substring(0, charIndex++);
+    }
+
+    if (!isDeleting && charIndex === current.length) {
+        setTimeout(() => isDeleting = true, 1500);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+    }
+
+    setTimeout(type, isDeleting ? 50 : 100);
+}
+
+type();
