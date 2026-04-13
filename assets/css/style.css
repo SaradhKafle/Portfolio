@@ -804,6 +804,10 @@ img {
         justify-content: center;
         margin-top: -60px;
     }
+    
+    .hero-sub {
+    min-height: 2.5em;
+    }
 
     .hero-bg {
         display: none;
