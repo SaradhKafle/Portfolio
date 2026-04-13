@@ -795,7 +795,6 @@ img {
 =========================== */
 @media (max-width: 900px) {
     .hero {
-        display: none;
         flex-direction: column-reverse;
         text-align: center;
         padding: 80px 24px 40px;
@@ -804,6 +803,10 @@ img {
         padding-top: 70px;
     }
 
+    .hero-bg {
+        display: none;
+    }
+    
     .hero-content { max-width: 100%; }
     .hero-actions { justify-content: center; }
     .hero-tag { margin: 0 auto 24px; }
