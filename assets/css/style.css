@@ -797,16 +797,17 @@ img {
     .hero {
         flex-direction: column-reverse;
         text-align: center;
-        padding: 80px 24px 40px;
+        padding: 70px 24px 40px;
         gap: 24px;
         min-height: auto;
-        padding-top: 70px;
+        justify-content: center;
+        margin-top: -60px;
     }
 
     .hero-bg {
         display: none;
     }
-    
+
     .hero-content { max-width: 100%; }
     .hero-actions { justify-content: center; }
     .hero-tag { margin: 0 auto 24px; }
